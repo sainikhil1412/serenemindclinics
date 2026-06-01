@@ -23,8 +23,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # Setup Pages configuration natively without third-party actions
       - name: Setup Pages
-        uses: actions/pages-primer@v1 # Initializes pages routing configuration
+        uses: actions/configure-pages@v5
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
